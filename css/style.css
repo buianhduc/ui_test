@@ -9,8 +9,79 @@ body {
   width: 100vw;
 }
 
-ul {
+nav {
+  height: 15vh;
+  min-height: 100px;
+  z-index: 100;
+}
+nav .logo img {
+  width: 30px;
+  height: 30px;
+}
+nav div {
+  background-color: white;
+}
+nav .nav-item .nav-link {
+  color: #1A1513;
+}
+nav .nav-item .underline {
+  width: inherit;
+  height: 3px;
+  background-color: #a39f9e;
+}
+nav .current .underline {
+  background-color: #4de9a5;
+}
+
+.main {
+  box-shadow: 5px 0 1000px #f2f2f1;
+}
+.main ul {
   list-style-type: none;
+}
+.main .item {
+  margin-bottom: 20px;
+}
+.main .item .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .item .item-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+}
+.main .item .item-description p {
+  font-size: 0.85rem;
+}
+.main .item .item-description h5 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.main .item .img-container {
+  width: 60px !important;
+  height: 60px !important;
+  background-color: #f8f9fc;
+  border-radius: 10px;
+}
+.main .item .img-container img {
+  width: 40px;
+  height: 40px;
+}
+.main .item .features-active {
+  background-color: #ffed65 !important;
+}
+.main .features b {
+  color: #ef262a;
+  font-size: 0.85em;
+  margin-bottom: 20px;
+}
+.main .by-industry b {
+  color: #ef262a;
+  font-size: 0.85em;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

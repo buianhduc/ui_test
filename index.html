@@ -12,97 +12,154 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
     <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg static-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">menu</span>
+                <span class="navbar-toggler-icon"><img src="./asset/hamburgersvg.svg" alt=""></span>
             </button>
-            <div class="logo">
-                <img src="" alt="" class="logo">
-                <a href="#" class="homepage-link">
+            <div class="logo navbar-brand">
+                <img src="./asset/logo.svg" alt="Watermelon Logo">
+                <b class="homepage-link ml-1">
                     Watermelon
-                </a>
+                </b>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
+                    <li class="nav-item current">
+                        <a class="nav-link" href="#">Product
+                            <div class="underline"></div>
+                        </a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Pricing
+                            <div class="underline"></div>
+                        </a>
+
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Success Stories</a>
+                        <a href="#" class="nav-link">Success Stories
+                            <div class="underline"></div></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Service</a>
+                        <a href="#" class="nav-link">Service
+                            <div class="underline"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">About Us
+                            <div class="underline"></div>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Resources</a>
+                        <a href="#" class="nav-link">Resources
+                            <div class="underline"></div>
+                        </a>
                     </li>
                 </ul>
+                <div class="sign-up-sign-in pull-right">
+                    <button class="sign-in btn btn-outline-dark pull-right">
+                        Log In
+                    </button>
+                    <button class="sign-up btn btn-primary btn-dark">
+                        Create a free account
+                    </button>
+                </div>
             </div>
-            <div class="sign-up-sign-in pull-right">
-                <button class="sign-in">
-                    Log In
-                </button>
-                <button class="sign-up">
-                    Create a free account
-                </button>
-            </div>
+
+
         </nav>
-    </header>
     <div class="main container-fluid row">
-        <div class="col-lg-6 container">
-            <h5 class = "row">
+        <div class="col-lg-8 container features">
+            <b class = "col row">
                 PRODUCT FEATURES
-            </h5>
+            </b>
             <div class="container row">
                 <div class="col-6">
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+                        <div class="col-lg-2">
+                            <div class="img-container features-active"><img src="./asset/menu.svg" alt=""></div>
+                        </div>
+
+                        <div class = "col-lg-10 item-description">
+                            <h5>Chatbot Builder</h5>
+                            <p>Build your codeless chat bot with Watermelon</p>
+                        </div>
+
                     </div>
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+                        <div class="col-lg-2">
+                            <div class=" img-container">
+                                <img src="./asset/dashboard.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-10 item-description">
+                            <h5>Central Dashboard</h5>
+                            <p>Manage your service team based on data</p>
+                        </div>
+
                     </div>
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+                        <div class ="col-lg-2">
+                            <div class="img-container">
+                                <img src="./asset/statistics.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 item-description">
+                            <h5>Statistics</h5>
+                            <p>Create a 360 degrees customer profile</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-5">
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+                        <div class="col-lg-2">
+                            <div class="img-container">
+                                <img src="./asset/chat.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 item-description">
+                            <h5>Livechat</h5>
+                            <p>Centralize your most used channels</p>
+                        </div>
+
                     </div>
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+
+                        <div class="col-lg-2">
+                            <div class="img-container">
+                                <img src="./asset/customer.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 item-description">
+                            <h5>Customer Profiles</h5>
+                            <p>Start an easy going conversation with customers</p>
+                        </div>
+
                     </div>
                     <div class="row item">
-                        <img src="" alt="">
-                        <h5>Chatbot Builder</h5>
-                        <p>Build your codeless chat bot with Watermelon</p>
+                        <div class="col-lg-2">
+                            <div class="img-container">
+                                <img src="./asset/setting.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 item-item-description">
+                            <h5>Integration</h5>
+                            <p>Complete your implementation with the integrations</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="col-lg-6">
-            <h5>
+        <div class="col-lg-4 by-industry">
+            <b class="col row">
                 BY INDUSTRY
-            </h5>
-            <ul>
+            </b>
+            <ul class="col">
                 <li>Customer Service</li>
                 <li>E-commerce</li>
                 <li>Healthcare</li>
@@ -114,9 +171,9 @@
     </div>
     <div class="container description row">
         <div class="col-lg-8">
-            <h5>
+            <p>
                 NO 9 TO 5 CUSTOMER SERVICE
-            </h5>
+            </p>
             <h1>
                 Do you also want to build your own digital colleague?
             </h1>
@@ -125,23 +182,32 @@
             </p>
         </div>
         <div class="col-lg-4 row">
-            <div class="button-img col-6">
-                <div class="row container">
-
+            <div class="col-5">
+                <div class="text-center">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="none"></circle>
+                    </svg>
+                    <p>Button</p>
+                </div>
+                <div class="text-center">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="none"></circle>
+                    </svg>
+                    <p>Button</p>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="text-center">
-                    <svg height="100" width="100">
-                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="none"></circle>
-                    </svg>
-                    <p>Button</p>
+            <div class="col-7">
+                <div class="long-mess">
+
                 </div>
-                <div class="text-center">
-                    <svg height="100" width="100">
-                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="none"></circle>
-                    </svg>
-                    <p>Button</p>
+                <div class="short-mess">
+
+                </div>
+                <div class="short-mess">
+
+                </div>
+                <div class="short-mess">
+
                 </div>
             </div>
         </div>
